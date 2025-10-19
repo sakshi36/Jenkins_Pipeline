@@ -1,5 +1,6 @@
 pipeline{
 agent any
+stages{
 {
 stage('Build') {
 steps 
@@ -23,6 +24,7 @@ stage('Release') {
 steps 
 {
 echo "Release done!!!"
+}
 }
 }
 }
